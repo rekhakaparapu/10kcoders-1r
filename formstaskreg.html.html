@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS IN HTML</title>
+</head>
+<body>
+    <marquee behavior="scroll"><h1> Job Application Form</h1></marquee>
+    <form method="" action="" style="background-color: blanchedalmond;">
+        <fieldset>
+        <legend><h2>Personal details:</h2></legend>
+        
+        
+        <label for="f_name">First name:</label>
+        <input type="f_name" name="fname" id="fname">
+        <label for="l_name">Last name:</label>
+        <input type="text" name="l_name" id="l_name"><br><br>
+        <label for="dob"> Date of Birth: </label>
+        <input type="date" name="dob" id="dob"><br><br>
+    
+        <label for="father">Father name:</label>
+        <input type="father" name="father" id="father"><br><br>
+        <label for="mother">Mother name:</label>
+        <input type="text" name="mother" id="mother"><br><br>
+        <label for="gurdian">Gurdian name (if):</label>
+        <input type="text" name="gurdian" id="gurdian"><br><br>
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" id="mail" required><br><br>
+        <label for="pass"> Password:</label>
+        <input type="password" name="pass" id="pass"><br><br>
+        <label for="number">Mobile:</label>
+        <input type="tel" name="number" id="number" pattern="{10}" required><br><br>
+        <label for="gender">Select gender :</label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="female">Female
+        <input type="radio" name="gender" id="gender" value="Other">Others
+        <input type="radio" name="gender" id="gender" value="not to say">Not to say <br><br>
+        <label for="Religion"> Religion :</label>
+        <input type="radio" name="rel" id="Religion" value="H">Hindu
+        <input type="radio" name="rel" id="Religion" value="M">Muslim
+        <input type="radio" name="rel" id="Religion" value="CH">Christian
+        <input type="radio" name="rel" id="Religion" value="Other">Other
+        <input type="radio" name="rel" id="Religion" value="not  tosay">N/A <br><br>
+        <label for="add"> Address:</label>
+        <textarea name="add" id="" cols="25" rows="3"></textarea><br><br></fieldset>
+        
+        <fieldset><legend><h2>Academic Details</h2></legend>
+        <h3>SSC details:</h3>
+        <label for="sn">School name:</label>
+        <input type="text" name="sn" id="sn"><br><br>
+        <label for="yearofpass">Year of passing:</label>
+        <input type="text" name="yearofpas" id="yearofpas"><br><br>
+        <label for="petrn">Percentage:</label>
+        <input type="number" name="petrn" id="petrn" pattern="[%],{2}"><br><br>
+        <label for="marks">Upload marks sheet :</label>
+        <input type="file" name="marks" id="marks">
+        <h3>Intermediate details:</h3>
+        <label for="inter"> College name:</label>
+        <input type="text" name="inter" id="inter"><br><br>
+        <label for="yp">Year of passing:</label>
+        <input type="text" name="yp" id="yp"><br><br>
+        <label for="per">Percentage:</label>
+        <input type="number" name="per" id="per" pattern="[%],{2}"><br><br>
+        <label for="marks">Upload marks sheet :</label>
+        <input type="file" name="marks" id="marks">
+
+        <h3>Graduation details :</h3>
+        <label >choose your graduation:  </label>
+        <input type="radio" name="grad" id="grad" value="cg">Completed Graduation
+        <input type="radio" name="grad" id="grad" value="pg"> Pursuing Graduation
+        <input type="radio" name="grad" id="grad" value="Pg">Post Graduation
+        <input type="radio" name="grad" id="grad" value="Ng">No Graduation <br><br>
+        <label for="gradtype"> Select ur graduation type</label>
+        <select name="gradtype" id="gradtype">
+            <option>select </option>
+            <option value="deg">Bachelor's Degree</option>
+            <option value="bt">B.Tech</option>
+            <option value="mt">M.Tech</option>
+            <option value="ma">M.A</option>
+            
+        </select><br><br>
+        <label for="dg"> College name:</label>
+        <input type="text" name="dg" id="dg"><br><br>
+        <label for="grp">Specialization</label>
+        <input type="text" name="grp" id="grp"><br><br>
+        <label for="yp">Year of passing:</label>
+        <input type="text" name="yp" id="yp"><br><br>
+        <label for="per">Percentage:</label>
+        <input type="number" name="per" id="per" pattern="{2}"><br><br>
+         <label for="marks">Upload marks sheet :</label>
+        <input type="file" name="marks" id="marks"><br><br>
+        <label for="skills">Choose skills:</label>
+        
+        <select id="skills" multiple size="5">
+            <option value="skill_1">html</option>
+            <option value="skill_2">css</option>
+            <option value="skill_3">java script</option>
+            <option value="skill_4">sql</option>
+            <option value="skill_5">Others</option>
+
+        </select><br><br>
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="reset" id="reset"></fieldset>
+        
+        
+        </form>
+    
+</body>
+</html>
